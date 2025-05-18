@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    background-color: #09545E;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5rem;
+}
+
+.gameIcon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 60px 20px 20px;
+}
+
+.choice {
+    font-size: 6rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.choice:hover {
+    color: orange;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.score {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.score p {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.msg-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0 20px;
+    text-align: center;
+}
+#msg {
+    background-color: #09545E;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .choice {
+        font-size: 5rem;
+    }
+
+    .score-board {
+        gap: 30px;
+    }
+
+    .score {
+        font-size: 1.3rem;
+    }
+
+    .score p {
+        font-size: 2rem;
+    }
+
+    #msg {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        font-size: 1.2rem;
+    }
+
+    .choice {
+        font-size: 4rem;
+    }
+
+    .gameIcon {
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .score-board {
+        gap: 20px;
+    }
+
+    .score {
+        font-size: 1rem;
+    }
+
+    .score p {
+        font-size: 1.6rem;
+    }
+
+    #msg {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
